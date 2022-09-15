@@ -456,7 +456,7 @@
 
     <!-- =====Modal + form===== -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal is-hidden">
+      <div class="modal">
         <button class="modal-btn-close" type="button" data-modal-close>
           <svg class="icon-close" width="18px" height="18px">
             <use href="./images/symbol-defs.svg#icon-close"></use>
@@ -497,7 +497,11 @@
             </label>
           </div>
           <label class="form-agreement">
-            <input class="form-checkbox" type="checkbox" name="agreement-checkbox" />
+            <input
+              class="form-checkbox visually-hidden"
+              type="checkbox"
+              name="agreement-checkbox"
+            />
             <svg class="form-checkbox-icon" width="16px" height="16px">
               <use class="form-icon-unchecked" href="./images/symbol-defs.svg#icon-unchecked"></use>
               <use class="form-icon-checked" href="./images/symbol-defs.svg#icon-check"></use>
