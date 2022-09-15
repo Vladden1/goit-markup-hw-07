@@ -1,0 +1,20 @@
+//
+// $ (dollar) - Синтаксис оголошення змінної -
+// & (амперсанд) - батьківський селектор.
+
+// $primaryColor: #888;
+// $cardBorderRadius: 4px;
+
+// .product {
+//   background-color: $primaryColor;
+//   border-radius: $cardBorderRadius;
+// }
+// лобальные миксины, функции, вспомогательные селекторы и т.д.
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primary-bg-color-button: #f5f4fa;
+  --title-font-family: 'Raleway', sans-serif;
+}
