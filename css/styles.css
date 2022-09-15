@@ -3,15 +3,15 @@
 /* вторичный черный цвет #757575 */
 /* акцент (цвет при наведении) #2196F3; */
 /* primary-font-family: "Roboto", sans-serif;*/
-/* tittle-font-family: "Raleway", sans-serif; */
+/* title-font-family: "Raleway", sans-serif; */
 
 :root {
   --primary-text-color: #757575;
-  --tittle-text-color: #212121;
+  --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --primary-bg-color-button: #f5f4fa;
-  --tittle-font-family: 'Raleway', sans-serif;
+  --title-font-family: 'Raleway', sans-serif;
 }
 
 h1,
@@ -83,7 +83,7 @@ textarea {
 
 .logo {
   color: #000000;
-  font-family: var(--tittle-font-family);
+  font-family: var(--title-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -108,7 +108,7 @@ textarea {
 .nav-list .nav-link {
   position: relative;
   display: block;
-  color: var(--tittle-text-color);
+  color: var(--title-text-color);
   letter-spacing: 0.02em;
 
   font-weight: 500;
@@ -207,10 +207,8 @@ HERO -- ГЕРОЙ
 */
 .hero {
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 200px 0;
+
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -262,7 +260,7 @@ HERO -- ГЕРОЙ
 
 /* 
 =========================
-Преимущества
+Преимущества--Advantages
 =========================
 */
 
@@ -283,11 +281,28 @@ HERO -- ГЕРОЙ
   overflow: hidden;
 }
 
-.feature-item {
+.advantages__list {
+  display: flex;
+  gap: 30px;
+}
+
+.advantages__subtitle {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+}
+.advantages__text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.advantages__item {
   width: 270px;
 }
 
-.feature-item .thumb {
+.advantages__thumb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,30 +311,13 @@ HERO -- ГЕРОЙ
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.thumb .feature-icon {
+.adventages__icon {
   width: 70px;
   height: 70px;
 }
 
 .feature {
   padding-top: 0px;
-}
-
-.feature-list {
-  display: flex;
-  gap: 30px;
-}
-
-.feature-list .title {
-  color: var(--tittle-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  margin-bottom: 10px;
-}
-.feature-list .text {
-  font-size: 14px;
-  line-height: 1.71;
 }
 
 /* 
@@ -332,7 +330,7 @@ HERO -- ГЕРОЙ
 }
 
 .specialty_title {
-  color: var(--tittle-text-color);
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -380,8 +378,8 @@ HERO -- ГЕРОЙ
   background-color: #f5f4fa;
 }
 
-.team__tittle {
-  color: var(--tittle-text-color);
+.team__title {
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -406,7 +404,7 @@ HERO -- ГЕРОЙ
 }
 
 .team__person {
-  color: var(--tittle-text-color);
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -466,8 +464,8 @@ HERO -- ГЕРОЙ
 =========================
 */
 
-.clients__tittle {
-  color: var(--tittle-text-color);
+.clients__title {
+  color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -581,7 +579,7 @@ Footer
   color: var(--primary-white-color);
   margin-right: 93px;
 }
-.socials__tittle {
+.socials__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -604,7 +602,7 @@ Footer
 }
 
 /* Контейнер Подпишись */
-.subscribe__tittle {
+.subscribe__title {
   color: var(--primary-white-color);
 
   font-weight: 700;
@@ -655,17 +653,6 @@ Footer
  =============================
   portfolio.html - Портфоліо
  =============================
-*/
-
-header.section {
-  border: 1px solid #ececec;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-/* 
-=========================
-portfolio--main
-=========================
 */
 
 /*
@@ -727,23 +714,23 @@ portfolio--main
   transition-duration: 250ms;
 }
 
-.examples .portfolio-link {
+.portfolio .portfolio-link {
   display: block;
-  color: var(--tittle-text-color);
+  color: var(--title-text-color);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.examples-list .tittle-card {
+.examples-list .title-card {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
-.examples .text {
+.portfolio .text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -871,7 +858,7 @@ REGISTRATION-FORM
 =========================
 */
 
-.form-tittle {
+.form-title {
   display: block;
   margin-bottom: 12px;
 
@@ -879,7 +866,7 @@ REGISTRATION-FORM
   line-height: 1.15;
   text-align: center;
 
-  color: var(--tittle-text-color);
+  color: var(--title-text-color);
 }
 
 .form-group {
@@ -1010,7 +997,7 @@ REGISTRATION-FORM
 .form-checkbox:checked + .form-checkbox-icon .form-icon-checked {
   opacity: 1;
 }
-.agreement-tittle {
+.agreement-title {
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 14px;
